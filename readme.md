@@ -20,7 +20,7 @@ Parameters can be hashed as an alternative to being stringified. This is useful 
 
 [XxHash64](https://learn.microsoft.com/en-us/dotnet/api/system.io.hashing.xxhash64) is used to perform the hash.
 
-Hashing parameter is achieved by using `HashParameters()`:
+Hashing parameters is achieved by using `HashParameters()`:
 
 
 ### Instance
