@@ -14,14 +14,7 @@ public static class VerifyParametersHashing
     {
         var data = XxHash64.Hash(Encoding.UTF8.GetBytes(value));
 
-        var builder = new StringBuilder("_", 17);
-
-        foreach (var item in data)
-        {
-            builder.Append(item.ToString("x2"));
-        }
-
-        return builder.ToString();
+        return ConvertPolyfill.ToHexStringLower(data);
     }
 
     /// <summary>
@@ -44,6 +37,7 @@ public static class VerifyParametersHashing
                     VerifierSettings.AppendParameter(value.Value, innerBuilder, true, counter);
                 }
 
+                builder.Append('_');
                 builder.Append(HashString(innerBuilder.ToString()));
             });
 
