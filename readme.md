@@ -9,9 +9,9 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow hashing of para
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
 
-## NuGet package
+## NuGet
 
-https://nuget.org/packages/Verify.ParametersHashing/
+ * https://nuget.org/packages/Verify.ParametersHashing
 
 
 ## Usage
