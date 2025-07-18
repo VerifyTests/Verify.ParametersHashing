@@ -1,0 +1,1 @@
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow hashing of parameters to mitigate long file names.
