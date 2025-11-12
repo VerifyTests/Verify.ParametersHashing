@@ -14,7 +14,7 @@ public static class VerifyParametersHashing
     {
         var data = XxHash64.Hash(Encoding.UTF8.GetBytes(value));
 
-        return ConvertPolyfill.ToHexStringLower(data);
+        return Convert.ToHexStringLower(data);
     }
 
     /// <summary>
