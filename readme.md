@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.ParametersHashing
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://ci.appveyor.com/api/projects/status/25dkrl8wdgqkk0p6?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-ParametersHashing)
+[![Build status](https://img.shields.io/appveyor/build/SimonCropp/Verify-ParametersHashing)](https://ci.appveyor.com/project/SimonCropp/Verify-ParametersHashing)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ParametersHashing.svg)](https://www.nuget.org/packages/Verify.ParametersHashing/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow hashing of parameters to mitigate long file names.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
