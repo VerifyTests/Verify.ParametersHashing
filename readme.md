@@ -42,8 +42,9 @@ Hashing parameters is achieved by using `HashParameters()`:
 <!-- snippet: HashParameters -->
 <a id='snippet-HashParameters'></a>
 ```cs
-[TestCase("Value1")]
-[TestCase("Value2")]
+[Test]
+[Arguments("Value1")]
+[Arguments("Value2")]
 public Task HashParametersUsage(string arg)
 {
     var settings = new VerifySettings();
@@ -51,7 +52,7 @@ public Task HashParametersUsage(string arg)
     return Verify(arg, settings);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L4-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-HashParameters' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L3-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-HashParameters' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -60,13 +61,14 @@ public Task HashParametersUsage(string arg)
 <!-- snippet: HashParametersFluent -->
 <a id='snippet-HashParametersFluent'></a>
 ```cs
-[TestCase("Value1")]
-[TestCase("Value2")]
+[Test]
+[Arguments("Value1")]
+[Arguments("Value2")]
 public Task HashParametersUsageFluent(string arg) =>
     Verify(arg)
         .HashParameters();
 ```
-<sup><a href='/src/Tests/Tests.cs#L17-L25' title='Snippet source file'>snippet source</a> | <a href='#snippet-HashParametersFluent' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L17-L26' title='Snippet source file'>snippet source</a> | <a href='#snippet-HashParametersFluent' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

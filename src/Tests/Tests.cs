@@ -1,10 +1,10 @@
-﻿[TestFixture]
-public class ParametersHashSample
+﻿public class ParametersHashSample
 {
     #region HashParameters
 
-    [TestCase("Value1")]
-    [TestCase("Value2")]
+    [Test]
+    [Arguments("Value1")]
+    [Arguments("Value2")]
     public Task HashParametersUsage(string arg)
     {
         var settings = new VerifySettings();
@@ -16,8 +16,9 @@ public class ParametersHashSample
 
     #region HashParametersFluent
 
-    [TestCase("Value1")]
-    [TestCase("Value2")]
+    [Test]
+    [Arguments("Value1")]
+    [Arguments("Value2")]
     public Task HashParametersUsageFluent(string arg) =>
         Verify(arg)
             .HashParameters();
